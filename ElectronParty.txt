@@ -23,10 +23,8 @@ class ElectronParty extends JFrame implements ActionListener{
         static int correctCounter;
 
         static Image backgrnd =
-Toolkit.getDefaultToolkit().getImage("background.jpeg"); //see
-devianArt in bibliography
-        static Image instructions =
-Toolkit.getDefaultToolkit().getImage("instructions.gif"); //made with GIMP software
+Toolkit.getDefaultToolkit().getImage("background.jpeg"); //see devianArt in bibliography
+        static Image instructions = Toolkit.getDefaultToolkit().getImage("instructions.gif"); //made with GIMP software
         static String hostpicture = ""; //strings with all the names of the images I need
         static String sidepicture = ""; //allows for different host & side atoms
         static Image hostatom = Toolkit.getDefaultToolkit().getImage(hostpicture);
@@ -95,20 +93,8 @@ Toolkit.getDefaultToolkit().getImage("instructions.gif"); //made with GIMP softw
             else {
                 correct = false;
                 correctCounter--;
-                JOptionPane.showMessageDialog(null,  "Wrong! Your Score is
-"+correctCounter+"\n How many electrons does the host atom
-have? Hint: what family on the periodic table did it come
-from? \n How many does it need? Trade electrons with the
-guests to fill him or her up.", "Game Score",
-JOptionPane.PLAIN_MESSAGE);    //** add this counter box
-for display
-                JOptionPane.showMessageDialog(null,  "Wrong! Your Score is
-"+correctCounter+"\n How many electrons does the host atom
-have? Hint: what family on the periodic table did it come
-from? \n How many does it need? Trade electrons with the
-guests to fill him or her up.", "Game Score",
-JOptionPane.PLAIN_MESSAGE);    //** add this counter box
-for display
+                JOptionPane.showMessageDialog(null,  "Wrong! Your Score is "+correctCounter+"\n How many electrons does the host atom have? Hint: what family on the periodic table did it come from? \n How many does it need? Trade electrons with the guests to fill him or her up.", "Game Score", JOptionPane.PLAIN_MESSAGE);    //** add this counter box for display
+                JOptionPane.showMessageDialog(null,  "Wrong! Your Score is "+correctCounter+"\n How many electrons does the host atom have? Hint: what family on the periodic table did it come from? \n How many does it need? Trade electrons with the guests to fill him or her up.", "Game Score", JOptionPane.PLAIN_MESSAGE);    //** add this counter box for display
                 }
             }
 
